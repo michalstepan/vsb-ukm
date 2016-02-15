@@ -10,6 +10,7 @@ public class Account {
     private final Date created;
     private String username;
     private final String pwd;
+    private String email;
 
     public Account(String username, String pwd) {
         this.created = new Date();
@@ -27,5 +28,13 @@ public class Account {
 
     public String getPwd() {
         return pwd;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
