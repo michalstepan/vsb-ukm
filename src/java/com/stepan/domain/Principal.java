@@ -7,6 +7,8 @@ public class Principal {
 
     private String name;
     private String surname;
+    private String pwd;
+
 
     public Principal(String name, String surname) {
         this.name = name;
@@ -27,5 +29,13 @@ public class Principal {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 }
