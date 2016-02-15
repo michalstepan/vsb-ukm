@@ -1,14 +1,18 @@
 package com.stepan.domain;
 
+import java.util.UUID;
+
 /**
  * Created by Michal on 15.2.2016.
  */
 public class User {
 
+    private final String uuid = UUID.randomUUID().toString();
     private String id;
     private String username;
     private String password;
     private String phoneNumber;
+
 
     public User(String id, String username, String password) {
         this.id = id;
@@ -49,5 +53,9 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getUuid() {
+        return uuid;
     }
 }
