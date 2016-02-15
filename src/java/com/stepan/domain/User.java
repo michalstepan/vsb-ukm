@@ -8,7 +8,7 @@ public class User {
     private String id;
     private String username;
     private String password;
-    private String email;
+    private String phoneNumber;
 
     public User(String id, String username, String password) {
         this.id = id;
@@ -43,11 +43,11 @@ public class User {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
